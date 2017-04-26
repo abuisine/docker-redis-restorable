@@ -1,6 +1,6 @@
-FROM		redis:3.0-alpine
+FROM		redis:3.2-alpine
 MAINTAINER	Alexandre Buisine <alexandrejabuisine@gmail.com>
-LABEL		version="1.0.0"
+LABEL		version="2.0.0"
 
 RUN sed -ie '/chown -R redis \./ i \
 AOF_FILE="/restore/appendonly.aof"; \
